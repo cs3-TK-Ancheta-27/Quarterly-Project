@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Homepage</title>
+</head>
+<body>
+   <iframe src="sidebar.html" frameborder="0" class="sidebar-frame"style="height: 100%; width: 25%; position: absolute; top: 0; left: 0";></iframe>
+  <video autoplay loop muted class="bg-video">
+    <source src="yelanbg.mp4" type="video/mp4">
+  </video>
+
+  <div class="content">
+    <img src="https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Yelan_Profile.png/revision/latest/scale-to-width-down/1000?cb=20221009201606" alt="" />
+
+    <h1>Yelan Impact</h1>
+
+   <p> Yelan is a mysterious and cunning woman who operates in the shadows of Liyue. Known as the "Phantom Thief," she excels in acquiring confidential information and completing difficult tasks. Yelan is a valuable asset to the Ministry of Civil Affairs, but her true motives remain shrouded in secrecy.</p>
+
+<p>Despite her enigmatic nature, Yelan is fiercely loyal to those she cares about. She is also a skilled fighter, capable of wielding a bow with unmatched precision. When not carrying out missions, Yelan can often be found gambling or enjoying the finer things in life.</p>
+
+<p>A master of deception and intrigue, Yelan is a force to be reckoned with. Her presence in Liyue is sure to have a profound impact on the events that unfold.</p>
+     </div>
+</body>
+
+<style> 
+@font-face{
+	     font-family: genshin;
+		 src:url(genshin.ttf);
+	}
+	*{
+            margin: 0;
+			list-style-type: none;
+			text-decoration: none;
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  font-family: genshin;
+}
+
+.content img {
+  width: 100%;
+
+}
+
+.content h1 {
+  font-size: 2em;
+  background-color: white;
+}
+
+.content p {
+  font-size: 1em;
+  color: white;
+  margin: 2px;
+  padding-bottom: 1em;
+}
+.sidebar-frame{
+
+
+}
+
+</style>
+
+</html>

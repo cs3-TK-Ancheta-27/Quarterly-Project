@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+     <head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title> Yelan Impact </title>
+	 </head>
+	 
+	 <body>
+	    <input type="checkbox" id="check">
+		<label for="check">
+		<i class="bars" id="btn"><img src="https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Icon_Paimon_Menu.png/revision/latest?cb=20210605102449" alt="" height="80px" width="80px"></i>
+		<i class="bars" id="cancel"><img src="https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Icon_Paimon_Menu.png/revision/latest?cb=20210605102449" alt="" height="80px" width="80px"></i>
+		</label>
+	 <div class="sidebar">
+	 <header>
+	 <h3><img src="https://static.wikia.nocookie.net/gensin-impact/images/e/ea/Yelan_Item.png/revision/latest/scale-to-width-down/185?cb=20220531064319" alt="" height="80px" width="80px" class="logo"> Genshin Impact</h3>
+	 
+     </header>	 
+	 <ul >
+	    <li> <a href="index.html" target="_top"><i class="homepage"></i><img src="https://static.wikia.nocookie.net/gensin-impact/images/3/30/Achievement_Liyue_The_Harbor_of_Stone_and_Contracts.png/revision/latest/thumbnail/width/360/height/360?cb=20210702105308" alt="" height="50px" width="50px"> Homepage</i></a></li></a><li>
+		<li> <a href="lore.html"target="_top"><i class="info"><img src="https://static.wikia.nocookie.net/gensin-impact/images/8/84/Unknown_Icon.png/revision/latest?cb=20220509204455" alt=""height="50px" width="50px"> Character Info</i></a><li>
+		<li> <a href="#"target="_top"><i class="build"><img src="https://wiki.hoyolab.com/_nuxt/img/artifactCardBg.d7b2ab0.png" alt="" height="50px" width="50px">Build Guide</i></a></li>
+		 <li> <a href="#"target="_top"><i class="links"><img src="https://www.freeiconspng.com/thumbs/links-icon/link-icon-png-14.png" alt="" height="50px" width="50px">Reference Links</i></a></li>
+	
+		
+	   </ul>
+	 </div>
+	  </div>
+<style>
+	@font-face{
+	     font-family: genshin;
+		 src:url(genshin.ttf);
+	}
+	*{
+            margin: 0;
+			list-style-type: none;
+			text-decoration: none;
+       
+    }	
+	.sidebar{
+	position:fixed;
+	left:-250px;
+	width: 250px;
+	height: 100%;
+	background: linear-gradient(180deg, rgba(9, 9, 10) 0%, rgba(86, 74, 92) 75%, rgba(97, 93, 150) 100%);
+	transition: all .5s ease;
+	z-index:100;
+	overflow: hidden;
+	}
+	
+	.sidebar header{
+	
+	font-family: genshin;
+	color: white;
+	text-align: center;
+	line-height: 65px;
+	background: rgba(86, 74, 92);
+	user-select: none;
+	}
+
+	 .sidebar ul {
+      height: 100%;
+	  }
+	body::-webkit-scrollbar {
+  display: none;
+}
+    .sidebar ul a{ 
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	font-size:14px;
+	color: white;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid black;
+	list-style-type: none;
+	float: left;
+	transition:.4s;
+    }
+	 .sidebar ul li:hover a {
+	  padding-left: 50px;
+	}
+	.sidebar ul li a li{
+	  margin-right: 16px;
+	 }
+	 .links {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+	 .links ul a{
+	 position: relative;
+	display: block;
+	height: auto;
+	width: 100%;
+	line-height: 65px;
+	font-size:14px;
+	color: white;
+	padding-left: 40px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid black;
+	list-style-type: none;
+	float: left;
+	transition:.4s;
+  }
+ 
+	}
+	.links ul li a {
+	 margin-right: 16px;
+	 }
+	.sidebar logo{
+            height: 50px;
+            float: left;
+			list-style-type: none;
+	}
+	#check{
+	    display:none;
+	}
+	label #btn, label #cancel{
+	    position: absolute;
+		cursor:pointer;
+	}
+	label #btn{
+	    left: 40px;
+		top: 2px;
+		padding: 6px 12px;
+		transition: all .5s;
+	}
+	label #cancel{
+	    z-index: 1111;
+		left: -220px;
+		top: 2px;
+		padding: 4px 9px;
+		transition: all .5s ease;
+	}
+	#check:checked ~ .sidebar{
+	    left: 0;
+	}	
+	#check:checked ~ .links{
+	    left: 0;
+	}	
+	#check:checked ~ label #btn{
+	    left: 250px;
+		opacity: 0;
+		pointer-events:none;
+	}
+	#check:checked ~ label #cancel{
+	    left: 220px;
+	}
+	
+	</style>
+	</body>
+</html>
